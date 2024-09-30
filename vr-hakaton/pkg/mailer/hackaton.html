@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация на Хакатон</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212; /* Темный фон */
-            color: #e0e0e0; /* Светлый текст */
-            padding: 20px;
-            margin: 0;
-        }
-        .container {
-            max-width: 600px;
-            background-color: #1e1e1e; /* Темно-серый фон */
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .header {
-            background-color: #1a73e8; /* Яркий цвет заголовка */
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            text-align: center;
-            color: white;
-        }
-        .header img {
-            width: 60px; /* Размер логотипа */
-            margin-bottom: 10px;
-        }
-        .header h1 {
-            font-size: 26px;
-            margin: 0;
-        }
-        .content {
-            color: #e0e0e0;
-            padding: 20px;
-        }
-        .content p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .content .highlight {
-            background-color: #1a73e8; /* Выделение */
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 12px;
-            color: #aaaaaa; /* Светло-серый текст */
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #121212; /* Темный фон */
+        color: #e0e0e0; /* Светлый текст */
+        padding: 20px;
+        margin: 0;
+      }
+      .container {
+        max-width: 600px;
+        background-color: #1e1e1e; /* Темно-серый фон */
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #1a73e8; /* Яркий цвет заголовка */
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        color: white;
+      }
+      .header img {
+        width: 60px; /* Размер логотипа */
+        margin-bottom: 10px;
+      }
+      .header h1 {
+        font-size: 26px;
+        margin: 0;
+      }
+      .content {
+        color: #e0e0e0;
+        padding: 20px;
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      .content .highlight {
+        background-color: #1a73e8; /* Выделение */
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+        color: #aaaaaa; /* Светло-серый текст */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Вы успешно зарегистрированы на Хакатон!</h1>
-        </div>
-        <div class="content">
-            <p>Уважаемый <strong>{{.Name}}</strong>,</p>
-            <p>Поздравляем! Вы успешно зарегистрировались на наш Хакатон по VR-разработке.</p>
-            <p>Подготовьте свои лучшие идеи и навыки — мы ждем вас на мероприятии, которое будет незабываемым!</p>
-            <p>Дата проведения: <span class="highlight">1 октября 2024 - 10 ноября 2024</span></p>
-            <p>Команда: {{.TeamName}}</p>
-            <p>Уникальный идентификатор команды: {{.TeamID}}</p>
-        </div>
-        <div class="footer">
-            <p>Если у вас возникли вопросы, напишите нам на <a href="mailto:support@hackathon.com" style="color: #1a73e8;">support@hackathon.com</a></p>
-        </div>
+      <div class="header">
+        <h1>Вы успешно зарегистрированы на Хакатон!</h1>
+      </div>
+      <div class="content">
+        <p>Уважаемый <strong>{{.Name}}</strong>,</p>
+        <p>
+          Поздравляем! Вы успешно зарегистрировались на наш Хакатон по
+          VR-разработке.
+        </p>
+        <p>
+          Подготовьте свои лучшие идеи и навыки — мы ждем вас на мероприятии,
+          которое будет незабываемым!
+        </p>
+        <p>
+          Дата проведения:
+          <span class="highlight">1 октября 2024 - 10 ноября 2024</span>
+        </p>
+        <p>Команда: {{.TeamName}}</p>
+        <p>Уникальный идентификатор команды: {{.TeamID}}</p>
+      </div>
+      <div class="footer">
+        <p>
+          Если у вас возникли вопросы, напишите нам на
+          <a href="mailto:ekaterina.dubskaya@yandex.ru" style="color: #1a73e8"
+            >ekaterina.dubskaya@yandex.ru</a
+          >
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-

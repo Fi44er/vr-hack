@@ -1,6 +1,6 @@
 const { default: axios } = require("axios");
-const API_URL = "http://localhost:6060/api/v1";
-// const API_URL = process.env.API_URL;
+// const API_URL = "http://localhost:6060/api/v1";
+const API_URL = process.env.API_URL;
 
 module.exports = {
   getOrders: async function () {

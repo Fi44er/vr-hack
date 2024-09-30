@@ -32,7 +32,7 @@ services:
     depends_on:
       - backand
     environment:
-      VITE_URL: http://backand:6060
+      VITE_URL: http://localhost:6060
 
   bot:
     build: vr_hack_bot/
