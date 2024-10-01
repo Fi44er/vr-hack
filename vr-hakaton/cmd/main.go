@@ -7,7 +7,7 @@ import (
 	"root/internal/eventbus"
 	orderModel "root/internal/order/model"
 	httpServer "root/internal/server/http"
-  teamModel "root/internal/team/model"
+	teamModel "root/internal/team/model"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2/log"

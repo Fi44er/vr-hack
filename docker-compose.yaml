@@ -32,14 +32,14 @@ services:
     depends_on:
       - backand
     environment:
-      VITE_URL: http://backand:6060
+      VITE_URL: https://backand:6060
 
   bot:
     build: vr_hack_bot/
     depends_on:
       - backand
     environment:
-      API_URL: http://backand:6060/api/v1
+      API_URL: https://backand:6060/api/v1
 
 volumes:
   local-pgdata:

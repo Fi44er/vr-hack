@@ -50,7 +50,11 @@ func (s Server) Run() error {
 	// Start http server
 
 	log.Info("HTTP server is listening on PORT: ", s.cfg.HttpPort)
-	if err := s.app.Listen(fmt.Sprintf(":%d", s.cfg.HttpPort)); err != nil {
+	// if err := s.app.Listen(fmt.Sprintf(":%d", s.cfg.HttpPort)); err != nil {
+	// 	log.Fatalf("Running HTTP server: %v", err)
+	// }
+
+	if err := s.app.ListenTLS(fmt.Sprintf(":%d", s.cfg.HttpPort), "./internal/certs/cert.pem", "./internal/certs/key.pem"); err != nil {
 		log.Fatalf("Running HTTP server: %v", err)
 	}
 	return nil
